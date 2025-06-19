@@ -1,0 +1,60 @@
+---
+title: "Storage Management"
+description: "Create and manage persistent storage volumes"
+---
+
+# Storage Management
+
+Create and manage persistent storage volumes for your virtual machines.
+
+## Prerequisites
+
+Before creating volumes, you need:
+
+- **Complete Profile:** Your profile must be complete with billing information
+- **Minimum Credits:** 
+  - USD: $1.00
+  - EUR: €1.00
+  - INR: ₹100.00
+
+## Volume Types
+
+### Standard Volumes
+- **Minimum size:** 10GB
+- **Maximum size:** 1TB
+- **Use for:** Data and applications
+
+### Bootable Volumes  
+- **Minimum size:** 100GB
+- **Maximum size:** 1TB
+- **Use for:** Operating system that can start a VM
+
+## Pricing
+
+**Storage cost:** $0.1 per TB per hour
+
+## How to Create a Volume
+
+1. Go to the Volumes page
+2. Click "Create Volume"
+3. Enter a name for your volume
+4. Select your region
+5. Choose the size (minimum 10GB)
+6. For bootable volumes, toggle "Make Bootable" and select an OS image
+7. Click "Create Volume"
+
+## Managing Volumes
+
+### Attaching Volumes
+1. Click "Attach" on any available volume
+2. Select a VM from the list
+3. Click "Attach Volume"
+
+### Detaching Volumes
+1. Click "Detach" on any attached volume
+2. Confirm the detachment
+
+### Deleting Volumes
+1. Make sure the volume is detached first
+2. Click "Delete"
+3. Confirm deletion (this cannot be undone)
