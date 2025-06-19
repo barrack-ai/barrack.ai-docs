@@ -1,0 +1,62 @@
+---
+title: "VM Deployment"
+description: "Deploy and manage your virtual machines"
+---
+
+# VM Deployment
+
+Deploy and manage your virtual machines with powerful GPU resources.
+
+## GPU Options
+
+| GPU Model | Best For | Price (USD/hour) |
+|-----------|----------|------------------|
+| H100-SXM5-80GB | Large AI models | $2.69 |
+| A100-SXM4-80GB | Deep learning | $1.59 |
+| L40 | AI inference | $1.19 |
+| RTX-A6000 | Development | $0.69 |
+| A40 | General purpose | $0.69 |
+
+## Regions
+
+Choose the location closest to your users:
+
+- **NORWAY-1** - Europe
+- **CANADA-1** - North America  
+- **US-1** - North America
+
+## Boot Options
+
+### OS Images
+Pre-configured operating systems:
+- Ubuntu Server 22.04 LTS with CUDA 12.4
+- Ubuntu Server 20.04 LTS with CUDA 12.2
+- Versions with Docker included
+
+### Volumes
+Boot from an existing storage volume (requires bootable volume).
+
+### Custom Images
+Use your own saved VM images.
+
+## SSH Keys
+
+You must have at least one SSH key to deploy a VM:
+
+1. Go to SSH Keys page
+2. Click "Create Key" to generate a new key
+3. Or click "Import Key" to use an existing key
+4. Select the key during VM deployment
+
+## VM States
+
+- **ACTIVE:** VM is running (full billing rate)
+- **SHUTOFF:** VM is stopped but resources reserved (full billing rate)
+- **HIBERNATED:** VM state saved, resources released (reduced rate: $0.01/hour)
+- **DELETED:** VM permanently removed (no charge)
+
+## Billing
+
+- Billing is per-minute for exact usage
+- You only pay for the time your VM is running
+- Hibernated VMs cost much less than active ones
