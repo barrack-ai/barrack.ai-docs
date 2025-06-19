@@ -1,0 +1,89 @@
+---
+title: "Troubleshooting"
+description: "Solutions to common issues"
+---
+
+# Troubleshooting
+
+Solutions to common issues you may encounter.
+
+## VM Deployment Issues
+
+### Insufficient Credits
+If you get an "Insufficient Credits" error:
+
+1. Go to the Credits page
+2. Purchase additional credits
+3. Try deploying again
+
+### Can't Connect via SSH
+If you can't connect to your VM:
+
+1. Check that your VM is in ACTIVE state
+2. Verify you're using the correct private key
+3. Use the correct username:
+   - Ubuntu images: use `ubuntu`
+   - Other images: use `root`
+4. Check that port 22 is open in firewall rules
+5. Verify private key permissions: `chmod 600 your-key.pem`
+
+### SSH Connection Command
+```bash
+ssh -i /path/to/your-private-key.pem ubuntu@your-vm-ip
+```
+
+## Storage Issues
+
+### Can't Create Volume
+If volume creation fails:
+
+1. Check that your profile is complete
+2. Verify you have sufficient credits
+3. Make sure the volume name is unique
+4. For bootable volumes, ensure you selected an OS image
+
+### Can't Attach Volume
+If you can't attach a volume:
+
+1. Make sure the VM is in ACTIVE state
+2. Check that volume and VM are in the same region
+3. Verify the volume isn't already attached to another VM
+
+## Firewall Issues
+
+### Rules Not Working
+If firewall rules aren't taking effect:
+
+1. Wait up to 10 minutes for rules to fully apply
+2. Check that the firewall is attached to your VM
+3. Verify the VM is in ACTIVE state
+4. Double-check your rule configuration (ports, IP ranges)
+
+## Account Issues
+
+### Can't Purchase Credits
+If you can't buy credits:
+
+1. Complete your profile with billing information
+2. Ensure your address, postal code, and country are filled in
+3. Try a different payment method
+
+### Profile Not Complete
+Make sure you have:
+- Full name
+- Complete address
+- Postal code
+- Country selected
+
+## Getting Help
+
+If these solutions don't help:
+
+**Email:** support@barrack.ai
+
+**Include in your email:**
+- Your account email address
+- Date and time of the issue
+- What you were trying to do
+- Any error messages you received
+- Screenshots if helpful
