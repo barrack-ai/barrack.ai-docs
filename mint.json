@@ -1,0 +1,49 @@
+{
+  "name": "Barrack.ai Documentation",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#0D9373",
+    "light": "#07C983",
+    "dark": "#0D9373"
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "mailto:support@barrack.ai"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Get Started",
+      "pages": [
+        "introduction",
+        "getting-started"
+      ]
+    },
+    {
+      "group": "Storage",
+      "pages": [
+        "storage",
+        "volumes"
+      ]
+    },
+    {
+      "group": "Virtual Machines",
+      "pages": [
+        "vm-deployment",
+        "gpu-config"
+      ]
+    },
+    {
+      "group": "Account",
+      "pages": [
+        "account",
+        "troubleshooting"
+      ]
+    }
+  ]
+}
