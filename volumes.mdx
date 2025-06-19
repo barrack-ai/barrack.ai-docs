@@ -1,0 +1,62 @@
+---
+title: "Volume Management"
+description: "Attach, detach, and manage your storage volumes"
+---
+
+# Volume Management
+
+Comprehensive tools for managing your storage volumes throughout their lifecycle.
+
+## Attaching Volumes
+
+To attach a volume to a VM:
+
+1. Click `Attach` on an available volume card
+2. Select a VM from the list (must be ACTIVE status)
+3. VM and volume must be in the same region
+4. Click "Attach Volume" to confirm
+
+**Requirements:**
+- VM must be in `ACTIVE` state
+- Volume and VM must be in the same region
+- Volume must not be already attached
+
+## Detaching Volumes
+
+To detach a volume from a VM:
+
+1. Click `Detach` on an attached volume
+2. Review the warning about potential application disruption
+3. Click "Detach" to confirm
+
+**Requirements:**
+- VM must be in `ACTIVE` state
+- Cannot detach the system/boot volume of a running VM
+
+## Deleting Volumes
+
+To delete a volume:
+
+1. Make sure the volume is detached first
+2. Click `Delete` on the volume card
+3. Confirm deletion in the modal
+4. **Warning:** This action cannot be undone
+
+**Requirements:**
+- Volume must be detached before deletion
+- All data will be permanently lost
+
+## Volume Status Indicators
+
+- **Available:** Ready to be attached
+- **Attached/In-use:** Currently attached to a VM
+- **Creating:** Being created
+- **Error:** Issue with creation or attachment
+
+## Best Practices
+
+- Create volumes in the same region as your VMs
+- Size volumes appropriately for your workload
+- Use bootable volumes for persistent OS configurations
+- Detach volumes before deleting VMs to preserve data
+- Monitor volume usage to avoid unnecessary costs
